@@ -6,7 +6,7 @@
 /*   By: rbenjami <rbenjami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/03/07 20:22:14 by rbenjami          #+#    #+#             */
-/*   Updated: 2014/03/08 14:56:43 by rbenjami         ###   ########.fr       */
+/*   Updated: 2014/03/08 15:19:28 by rbenjami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int		add_to_grid(t_grid **grid, int columns, int player)
 {
 	int		i;
 
-	if (columns == 0 || columns - 1 > (*grid)->columns)
+	if (columns <= 0 || columns - 1 > (*grid)->columns)
 	{
 		error("wrong input: ", NULL);
 		return (0);
